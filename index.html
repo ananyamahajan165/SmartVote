@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SmartVote</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <div class="logo">SmartVote</div>
+      <button class="hamburger" aria-label="Menu"><span></span><span></span><span></span></button>
+      <ul class="nav-links">
+        <li><a href="#features">Features</a></li>
+        <li><a href="#stats">Stats</a></li>
+        <li><a href="#how">How It Works</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><button id="darkModeToggle">🌙</button></li>
+      </ul>
+      <button class="login-btn">Login/Register</button>
+    </nav>
+  </header>
+  <main>
+    <section class="hero">
+      <div class="hero-content">
+        <h1 class="hero-headline"><span id="typed-headline"></span></h1>
+        <p class="hero-desc">SmartVote is a modern, secure, and user-friendly platform for online elections. Vote from anywhere, anytime, with full transparency and privacy.</p>
+        <button class="cta-btn">Get Started</button>
+      </div>
+      <div class="hero-login-card">
+        <h2>Login</h2>
+        <p>Please enter your Login and your Password</p>
+        <form id="loginForm">
+          <div class="input-group">
+            <input type="text" placeholder="Username or Email" required>
+          </div>
+          <div class="input-group">
+            <input type="password" placeholder="Password" required>
+          </div>
+          <a href="#" class="forgot-link">Forgot password?</a>
+          <button type="submit" class="login-btn">Login</button>
+          <a href="#" class="register-link">Not a member yet? <span>Register!</span></a>
+        </form>
+      </div>
+    </section>
+    <section id="stats" class="stats">
+      <h2>Stats</h2>
+      <div class="stats-cards">
+        <div class="card stat-card"><h3 id="votersCount">0</h3><p class="stat-label">Total Voters</p></div>
+        <div class="card stat-card"><h3 id="votesCast">0</h3><p class="stat-label">Votes Cast</p></div>
+        <div class="card stat-card"><h3 id="turnout">0%</h3><p class="stat-label">Turnout</p></div>
+      </div>
+      <div style="display:flex;justify-content:center;margin-top:2rem;">
+        <canvas id="resultsChart" width="220" height="110"></canvas>
+      </div>
+    </section>
+    <section id="features" class="features">
+      <h2>Features</h2>
+      <div class="feature-cards">
+        <div class="card"><span>🔒</span><h3>Secure Blockchain Voting</h3><p>Votes are recorded on a tamper-proof blockchain ledger.</p></div>
+        <div class="card"><span>📱</span><h3>Mobile Friendly</h3><p>Vote easily from any device, anywhere.</p></div>
+        <div class="card"><span>🕒</span><h3>Live Results & Analytics</h3><p>Track results and analytics in real time.</p></div>
+        <div class="card"><span>🌙</span><h3>Dark Mode</h3><p>Switch to dark mode for a comfortable viewing experience.</p></div>
+        <div class="card"><span>🧑‍💼</span><h3>Admin Dashboard</h3><p>Manage elections, candidates, and view analytics.</p></div>
+        <div class="card"><span>🛡️</span><h3>End-to-End Verifiability</h3><p>Tracker codes and public audit logs for every vote.</p></div>
+        <div class="card"><span>⚡</span><h3>Accessibility & Security</h3><p>WCAG forms, keyboard navigation, cryptographic audit trails.</p></div>
+        <div class="card"><span>🧩</span><h3>Multiple Ballot Types</h3><p>First-Past-The-Post, Ranked-Choice, Approval voting options.</p></div>
+        <div class="card"><span>🎉</span><h3>Confetti Celebration</h3><p>Enjoy a confetti animation after you vote!</p></div>
+        <div class="card"><span>🔔</span><h3>Notification Toasts</h3><p>Get instant feedback for your actions.</p></div>
+      </div>
+    </section>
+    <section id="how" class="how">
+      <h2>How It Works</h2>
+      <ol class="timeline">
+        <li data-icon="📝">Register</li>
+        <li data-icon="🔑">Login</li>
+        <li data-icon="🗳️">Vote</li>
+        <li data-icon="📊">Results</li>
+      </ol>
+    </section>
+    <section id="contact" class="contact">
+      <h2>Contact Us</h2>
+      <form class="contact-form" id="contactForm">
+        <input type="text" placeholder="Your Name" required />
+        <input type="email" placeholder="Your Email" required />
+        <textarea placeholder="Message" required></textarea>
+        <button type="submit">Send</button>
+      </form>
+      <div class="contact-info">
+        <p>Email: contact@smartvote.com</p>
+        <p>Phone: +91 84929 58192</p>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <div class="footer-content">
+      <span>&copy; 2025 SmartVote. All rights reserved.</span>
+      <div class="social-icons">
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-facebook"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+      </div>
+    </div>
+  </footer>
+  <div id="toast" class="toast"></div>
+  <div id="modal" class="modal"></div>
+  <div id="spinner" class="spinner"></div>
+  <script src="script.js"></script>
+</body>
+</html>

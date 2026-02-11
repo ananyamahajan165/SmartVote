@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SmartVote Admin Panel</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <div id="admin-container">
+        <header>
+            <h1>SmartVote Admin</h1>
+            <button id="darkModeToggleAdmin">🌙</button>
+        </header>
+        <section id="admin-auth-section">
+            <div id="admin-login-form">
+                <h2>Admin Login</h2>
+                <input type="text" id="admin-username" placeholder="Admin Username">
+                <input type="password" id="admin-password" placeholder="Password">
+                <button onclick="adminLogin()">Login</button>
+            </div>
+        </section>
+        <section id="admin-dashboard-section" style="display:none;">
+            <!-- Admin dashboard will be rendered here -->
+        </section>
+    </div>
+    <script src="admin.js"></script>
+</body>
+</html>
