@@ -7,3 +7,9 @@ It provides separate interfaces for voters and administrators, allowing administ
 
 The system is designed for small-scale elections such as college elections, organizational voting, and internal polls, offering a reliable alternative to traditional paper-based voting.
 
+### 🛠️ Technologies Used
+- HTML, CSS, JavaScript
+- Node.js
+- Database (MySQL / DBMS)
+- Git & GitHub
+
