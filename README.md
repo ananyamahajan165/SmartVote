@@ -8,7 +8,7 @@ It provides separate interfaces for voters and administrators, allowing administ
 The system is designed for small-scale elections such as college elections, organizational voting, and internal polls, offering a reliable alternative to traditional paper-based voting.
 
 ### 🛠️ Technologies Used
-- HTML
+- HTML (Hyper Text Markup Language)
 - CSS
 - JavaScript
 - Node.js
