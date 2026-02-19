@@ -9,7 +9,7 @@ The system is designed for small-scale elections such as college elections, orga
 
 ### 🛠️ Technologies Used
 - HTML (Hyper Text Markup Language)
-- CSS
+- CSS (Cascading Stylesheet)
 - JavaScript
 - Node.js
 - Database (MySQL / DBMS)
